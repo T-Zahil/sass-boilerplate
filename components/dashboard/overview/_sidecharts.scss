@@ -1,0 +1,8 @@
+.side-charts {
+  .card {
+    &:first-child {
+      margin-top: 0;
+    }
+    margin: 1.5rem 0;
+  }
+}

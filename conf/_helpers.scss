@@ -1,0 +1,36 @@
+.is-borderless {
+  border: none !important;
+}
+
+.is-shadow-1 {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.justify-start {
+  justify-content: flex-start !important;
+}
+
+.justify-end {
+  justify-content: flex-end !important;
+}
+
+.justify-center {
+  justify-content: center !important;
+}
+
+.flexc {
+  @include flexCenter();
+}
+
+.flexColumns {
+  flex-direction: columns !important;
+}
+
+.is-divider {
+  display: block;
+  position: relative;
+  border-top: .1rem solid #dbdbdb;
+  height: .1rem;
+  margin: .25rem 0 1.5rem 0;
+  text-align: center;
+}

@@ -1,0 +1,13 @@
+@mixin font-face($font-family, $file-path, $font-weight, $font-style) {
+  @font-face {
+    font-family: $font-family;
+    src: url('../fonts/#{$file-path}');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+// @include font-face(Gotham,
+// 'GothamBook.ttf',
+// 400,
+// normal);

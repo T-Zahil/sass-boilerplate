@@ -1,0 +1,15 @@
+@mixin flexCenter {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+// Slightly lighten a color
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+// Slightly darken a color
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}

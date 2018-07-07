@@ -1,0 +1,112 @@
+.notifications-hacker {
+  width: 27%;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.10);
+  @include medium {
+    width: 40%;
+    .level {
+      display: flex;
+    }
+  }
+  @include mobile {
+    width: 75%;
+  }
+  .user {
+    height: 6rem;
+    padding: 1rem;
+    margin: 0;
+    border-bottom: 2px solid $lightGrey;
+    img {
+      width: 2rem;
+      justify-content: space-around;
+      margin-right: .5rem;
+    }
+    span {
+      font-weight: bold;
+      font-size: .9rem;
+      color: $blue;
+    }
+    div {
+      display: flex;
+      align-items: center;
+    }
+    .icon {
+      cursor: pointer;
+      margin-right: .5rem;
+    }
+  }
+  .infos {
+    height: 7rem;
+    padding: 1rem 3rem;
+    margin: 0;
+    div {
+      @include flexCenter();
+      flex-direction: column;
+      .title {
+        margin: 0;
+        color: $blue;
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      span {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: $lightBlue;
+      }
+    }
+  }
+  .separator {
+    height: 4rem;
+    margin: 0;
+    background-color: $lightGrey;
+    padding: .5rem 1rem;
+    div {
+      display: flex;
+      align-items: center;
+    }
+    .title {
+      font-size: 0.8rem;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    .icon {
+      margin-right: .5rem;
+    }
+    a {
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+  }
+  .notifications-content {
+    overflow-y: scroll;
+    .notification-content {
+      padding: .5rem 1rem;
+      margin-bottom: .5rem;
+      border-bottom: 1px solid $lightGrey;
+      &:first-child {
+        padding-top: 1rem;
+      }
+    }
+    .title {
+      margin: 0;
+      color: $blue;
+      font-size: 0.8rem;
+    }
+    p {
+      margin-top: .3rem;
+      color: $grey;
+      font-size: 0.7rem;
+    }
+    span {
+      color: $lightBlue;
+      font-size: 0.6rem;
+    }
+  }
+}
