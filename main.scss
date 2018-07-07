@@ -1,23 +1,4 @@
-// Encoding
 @charset 'utf-8';
-/* * * *
-* CONF
-* * * */
-
-@import 'conf/fonts';
-@import 'conf/mixins';
-@import 'conf/colors';
-@import 'conf/helpers';
-@import 'conf/mediaqueries';
-@import 'conf/interface';
-@import 'conf/transitions';
-/* * * *
-* ELEMENTS
-* * * */
-
-@import 'elements/button--blue';
-/* * * *
-* PAGES
-* * * */
-
-@import 'pages/example-page';
+@import 'conf/all';
+@import 'elements/all';
+@import 'pages/all';
